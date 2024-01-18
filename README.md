@@ -2,7 +2,7 @@
 
 **_By Rosemary Ojwang_**
 
-**A website that sells a specific category of products**
+**A website that sells a specific category of products.**
 
 ## Technologies
 * HTML
@@ -10,7 +10,7 @@
 * JavaScript
 
 ## Description
-A website that allows buyers to products to purchase and also input their shipping and payment information. Upon submitting their order, they get a discount based on the products selected for purchase. Then, displays a receipt with all of the order information back to the user, including the discounted price.
+A website that allows buyers to select products to purchase and also input their shipping and payment information. Upon submitting their order, they get a discount based on the products selected for purchase. Then, displays a receipt with all of the order information back to the user, including the discounted price.
 
 ## Set-Up/Installation Requirements
 1. Clone this repository to your desktop.
