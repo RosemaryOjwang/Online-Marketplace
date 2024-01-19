@@ -10,6 +10,7 @@
 <body>
     <h1>Online Baby Shop</h1>
     <form id="items">
+        Please select the item you want to purchase <br>
         <select>
             <option value="Rompers">Rompers</option>
             <option value="Diaper Vest">Diaper Vests</option>
@@ -24,16 +25,19 @@
             <option calue="Vests">Vests</option>
             <option value="baby Walker">Baby walker</option>
         </select>
-        Shipping Information
+        <label for="quantity">Quantity</label>
+        <input type="number" id="number">
+            <br><br>
+        Shipping Information<br>
         <label for="name">Name</label>
-        <input type="text" placeholer="Your full name" id="name">
+        <input type="text" placeholder="Your full name" id="name"><br>
         <label for="address">Address</label>
-        <input type="text" placeholder="Your full address" id="address">
+        <input type="text" placeholder="Your full address" id="address"><br>
         <select>
             <option value="cash on delivery">Cash on delivery</option>
             <option value="mpesa">Mpesa</option>
             <option value="credit card">Credit Card</option>
-        </select>
+        </select><br>
         <button type="submit">Order</button>
     </form>
     
