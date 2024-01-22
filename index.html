@@ -42,25 +42,69 @@
         </select><br>
         <button id="orderBtn"  type="submit">Order</button>
     </form>
-    <div class="my-receipt">
-        <form id="receipt">
-            <hr>
-            <h2>RECEIPT</h2>
-            <hr>
-            <h3>Kalure Online Baby Shop</h3>
-            <div id="addressShop">
-                <div id="addressA"><p>Address:<br>Date:<br>Manager:</p></div>
-                <div id="addressB"><p>1234, Barwesa<br><span id="todays-date"></span><br>Lorem Ipsum</p></div>
-            </div>            
-            <hr>
-            <h3>Shipping Details</h3>
-            <div id="shipping">
-                <div id="shipping-Left"></div>
-                <div id="shipping-Right"></div>
+    <div id="my-receipt">
+    
+        <h3>*********************************</h3>
+        <h2>RECEIPT</h2>
+        <h3>*********************************</h3>
+        <h3>Kalure Online Baby Shop</h3>
+        <div id="addressShop">
+            <div id="addressA">
+                <p>Address:<br>Date:<br>Manager:</p>
             </div>
+            <div id="addressB">
+                <p>
+                    1234, Barwesa<br>
+                    <span id="todays-date">--</span><br>
+                    Lorem Ipsum
+                </p>
+            </div>
+        </div>            
+        <hr>
+        <h3>Description</h3>
+        <div id="description">
+            <div id="description1">
+                <p id="selected-item">None</p>
+            </div>
+            <div id="description2">
+                <p id="quantity">0</p>
+            </div>
+            <div id="description2">
+                <p id="discounted-price">0</p>
+            </div>
+        </div>
+        <hr>
+        <div id="total">
+            <div>
+                <p>Total----------------</p>
+            </div>
+            <div>
+                <p id="amount">KES.</p>
+            </div>
+        </div>
             
-        </form> 
-
+        <hr>
+        <h3>Shipping Details</h3>
+        <div id="shipping">
+            <div id="shipping-Left">
+                <p>
+                    Receiver's Name:<br>
+                    Receiver's Address:<br>
+                    Receiver's Phone Number:
+                </p>
+            </div>
+            <div id="shipping-Right">
+                <p>
+                    <span id="receiver-name">--</span><br>
+                    <span id="receiver-address">--</span><br>
+                    <span id="receiver-contact">--</span>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <h1>THANK YOU</h1>
+        <h3>*********************************</h3>
+            
     </div>
         
 </body>

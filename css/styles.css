@@ -8,9 +8,9 @@ hr  {
     width: 300px;
     margin-left: 40%;
 }
-#addressShop    {
+#addressShop, #shipping, #description, #total    {
     display:flex;
 }
-#shipping   {
-    display: flex;
+#my-receipt {
+    display: none;
 }
