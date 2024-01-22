@@ -8,22 +8,22 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>Online Baby Shop</h1>
+    <h1>Kalure Online Baby Shop</h1>
     <form id="items">
         Please select the item you want to purchase <br>
         <select>
-            <option value="Rompers">Rompers</option>
-            <option value="Diaper Vest">Diaper Vests</option>
-            <option value="Socks">Socks</option>
-            <option value="Shawl">Shawl</option>
-            <option value="Blanket">Blanket</option>
-            <option value="Baby Crib">Baby Crib</option>
-            <option value="weaters">Sweaters</option>
-            <option value="Flannels">Flannels</option>
-            <option value="Baby bath basin">Baby bath basin</option>
-            <option value="Receiving set">Receiving set</option>
-            <option calue="Vests">Vests</option>
-            <option value="baby Walker">Baby walker</option>
+            <option value="Rompers">Rompers @KES. 100</option>
+            <option value="Diaper Vest">Diaper Vests @KES. 50</option>
+            <option value="Socks">Socks @KES. 40</option>
+            <option value="Shawl">Shawl @KES. 950</option>
+            <option value="Blanket">Blanket  @KES 1200</option>
+            <option value="Baby Crib">Baby Crib @KES. 2200</option>
+            <option value="weaters">Sweaters @KES. 150</option>
+            <option value="Flannels">Flannels 3pcs @KES. 500</option>
+            <option value="Baby bath basin">Baby bath basin @KES 650</option>
+            <option value="Receiving set">Receiving set @KES 3000</option>
+            <option calue="Vests">Vests @KES 100</option>
+            <option value="baby Walker">Baby walker @KES 6000</option>
         </select>
         <label for="quantity">Quantity</label>
         <input type="number" id="number">
@@ -32,14 +32,36 @@
         <label for="name">Name</label>
         <input type="text" placeholder="Your full name" id="name"><br>
         <label for="address">Address</label>
-        <input type="text" placeholder="Your full address" id="address"><br>
+        <input type="text" placeholder="Town, street and House number" id="address"><br>
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" id="phone-number" placeholder="0700000000"><br>
         <select>
             <option value="cash on delivery">Cash on delivery</option>
             <option value="mpesa">Mpesa</option>
             <option value="credit card">Credit Card</option>
         </select><br>
-        <button type="submit">Order</button>
+        <button id="orderBtn"  type="submit">Order</button>
     </form>
-    
+    <div class="my-receipt">
+        <form id="receipt">
+            <hr>
+            <h2>RECEIPT</h2>
+            <hr>
+            <h3>Kalure Online Baby Shop</h3>
+            <div id="addressShop">
+                <div id="addressA"><p>Address:<br>Date:<br>Manager:</p></div>
+                <div id="addressB"><p>1234, Barwesa<br><span id="todays-date"></span><br>Lorem Ipsum</p></div>
+            </div>            
+            <hr>
+            <h3>Shipping Details</h3>
+            <div id="shipping">
+                <div id="shipping-Left"></div>
+                <div id="shipping-Right"></div>
+            </div>
+            
+        </form> 
+
+    </div>
+        
 </body>
 </html>

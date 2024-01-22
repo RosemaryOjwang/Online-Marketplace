@@ -1,3 +1,16 @@
-#items, h1   {
+#items, h1, h2   {
     text-align:center;
+}
+hr  {
+    border-top: 2px dotted #000000;
+}
+.my-receipt {
+    width: 300px;
+    margin-left: 40%;
+}
+#addressShop    {
+    display:flex;
+}
+#shipping   {
+    display: flex;
 }
