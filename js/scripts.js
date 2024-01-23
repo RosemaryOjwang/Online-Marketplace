@@ -46,19 +46,28 @@ function flannelsDiscount() {
 function handleForm(event)  {
     event.preventDefault();
     const purchase =document.getElementById("purchase").value;
-    const quantity = document.getElementById("quantity").value;
+    const quantity1 = document.getElementById("noOfItems").value;
+    console.log(quantity1);
+    
     let receipt = document.getElementById("my-receipt");
     receipt.style.display = "block"
+    receipt.style.width = "450px"
     let form = document.getElementById("items");
     form.style.display = "none";
     const dateNow = new Date();
     document.getElementById("todays-date").innerHTML = dateNow;
+    document.getElementById("selected-item").innerHTML = purchase;
+    document.getElementById("quantity").innerHTML = quantity1;
+    
 
     let total;
 
     if (purchase === 'Rompers')   {
         rompersDiscount();
-        total = discountedPrice * quantity;
+        console.log(document.getElementById("discounted-price").innerText = "@" + discountedPrice);
+
+        total = discountedPrice * quantity1;
+        document.getElementById("amount").innerText = "KES. " + total;
 
     } else if (purchase === 'DiaperVest' ) {
         console.log("kenya1")
