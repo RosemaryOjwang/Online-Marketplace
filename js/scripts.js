@@ -1,5 +1,5 @@
 //Business Logic
-
+var receipt = document.getElementById("my-receipt");
 let discountedPrice;
 function rompersDiscount()  {
     const rompersPrice = 100;
@@ -41,6 +41,11 @@ function babyBasinDiscount()    {
 function flannelsDiscount() {
     const percentageDiscount = 5;
 }
+function shippingDetails()  {
+    document.getElementById("receiver-name").innerHTML = document.getElementById("name").value;
+    document.getElementById("receiver-address").innerHTML = document.getElementById("address").value;
+    document.getElementById("receiver-contact").innerHTML = document.getElementById("phone-number").value;
+}
 
 //UI Logic
 function handleForm(event)  {
@@ -49,15 +54,21 @@ function handleForm(event)  {
     const quantity1 = document.getElementById("noOfItems").value;
     console.log(quantity1);
     
-    let receipt = document.getElementById("my-receipt");
-    receipt.style.display = "block"
-    receipt.style.width = "450px"
+    receipt = document.getElementById("my-receipt");
+    receipt.style.display = "block";
+    receipt.style.width = "450px";
+    receipt.style.marginLeft = "400px";
     let form = document.getElementById("items");
     form.style.display = "none";
     const dateNow = new Date();
     document.getElementById("todays-date").innerHTML = dateNow;
     document.getElementById("selected-item").innerHTML = purchase;
     document.getElementById("quantity").innerHTML = quantity1;
+    document.getElementById("quantity").style.marginLeft = "50px";
+    document.getElementById("quantity").style.marginRight = "50px";
+
+    shippingDetails();
+    
     
 
     let total;
